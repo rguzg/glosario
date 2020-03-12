@@ -1,0 +1,169 @@
+:root{
+	--blanco: #FFFFFF;
+	--texto: #707070;
+	--azul: #2490FF;
+	--gris: #dedede;
+}
+
+*{
+    padding: 0px;
+	margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html{
+	width: 100%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #FCFCFC;
+    user-select: none;
+}
+
+a{
+
+    color: var(--texto)
+
+}
+
+/* Pseudoclases */
+a:hover{
+
+    text-decoration: none;
+
+}
+
+button:hover{
+
+    color: var(--azul);
+
+}
+
+select:hover{
+
+    background-color: var(--azul);
+    color: var(--blanco);
+
+}
+
+/* Globales */
+.floatLeft{
+
+    float: left;
+
+}
+
+.alignCenter{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.bold{
+
+    font-weight: bold;
+
+}
+
+.spaceBetween{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* Usado para los subtitulos */
+.mb15px{
+
+    margin-bottom: 15px;
+}
+
+.overflowTwoLines{
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+
+}
+
+.overflowThreeLines{
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+
+}
+
+.w-33{
+
+    width: 33%;
+
+}
+
+/* Clases de elementos de la página */
+.contenedorPrincipal{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenedor{
+
+    float: left;
+    margin-top: 75px;
+    height: calc(100% - 75px);
+    color: var(--texto);
+
+}
+
+.contenido{
+
+    box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.75);
+    height: 530px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    position: relative;
+    /* width: 100%; */
+
+}
+
+.filtroPaises{
+
+    width: 200px;
+    float: left;
+    background-color: var(--blanco);
+    color: var(--texto);
+    border-radius: 7px;
+    padding: 1px;
+    height: 30px !important;
+
+}
+
+.resultado{
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gris);
+    background-color: var(--blanco);
+    margin-bottom: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+#resultadosBusqueda{
+
+    max-height: 450px;
+    width: 100%;
+    overflow: scroll;
+
+}
