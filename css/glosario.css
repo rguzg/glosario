@@ -28,6 +28,18 @@ a{
 
 }
 
+textarea{
+    resize: none;
+    padding: 5px;
+    text-align: justify;
+}
+
+textarea:disabled{
+
+    background-color: var(--blanco);
+
+}
+
 /* Pseudoclases */
 a:hover{
 
@@ -104,6 +116,24 @@ select:hover{
 .w-33{
 
     width: 33%;
+
+}
+
+.w-65{
+
+    width: 65%;
+
+}
+
+.w-45{
+
+    width: 45%;
+
+}
+
+.h-60{
+
+    height: 60%;
 
 }
 
@@ -221,4 +251,3 @@ select:hover{
     text-align: justify;
 
 }
-
