@@ -3,6 +3,7 @@
 	--texto: #707070;
 	--azul: #2490FF;
 	--gris: #dedede;
+	--background: #F7F9FC;
 }
 
 *{
@@ -17,7 +18,7 @@ body, html{
     font-size: 15px;
     display: flex;
     justify-content: center;
-    background-color: #FCFCFC;
+    background-color: var(--background);
     user-select: none;
 }
 
@@ -111,6 +112,7 @@ select:hover{
 
     display: flex;
     justify-content: space-between;
+    background-color: var(--background);
 
 }
 
@@ -123,16 +125,27 @@ select:hover{
 
 }
 
+.contenedorSmall{
+
+    float: left;
+    margin-top: 75px;
+    height: calc(100% - 75px);
+    color: var(--texto);
+    padding: 40px;
+    background-color: white;
+
+}
+
 .contenido{
 
     box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.75);
-    height: 530px;
+    height: 480px;
     padding-top: 15px;
     padding-left: 20px;
     padding-right: 20px;
     float: left;
     position: relative;
-    /* width: 100%; */
+    background: var(--blanco);
 
 }
 
