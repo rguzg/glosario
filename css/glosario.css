@@ -1,19 +1,19 @@
 :root{
-	--blanco: #FFFFFF;
-	--texto: #707070;
-	--azul: #2490FF;
-	--gris: #dedede;
-	--background: #F7F9FC;
+    --blanco: #FFFFFF;
+    --texto: #707070;
+    --azul: #2490FF;
+    --gris: #dedede;
+    --background: #F7F9FC;
 }
 
 *{
     padding: 0px;
-	margin: 0px;
+    margin: 0px;
     font-family: 'Poppins', sans-serif;
 }
 
 body, html{
-	width: 100%;
+    width: 100%;
     height: 100%;
     font-size: 15px;
     display: flex;
@@ -23,9 +23,9 @@ body, html{
 }
 
 a{
-
+    
     color: var(--texto)
-
+    
 }
 
 textarea{
@@ -35,115 +35,127 @@ textarea{
 }
 
 textarea:disabled{
-
+    
     background-color: var(--blanco);
-
+    
 }
 
 /* Pseudoclases */
 a:hover{
-
+    
     text-decoration: none;
-
+    
 }
 
 button:hover{
-
+    
     color: var(--azul);
-
+    
 }
 
 select:hover{
-
+    
     background-color: var(--azul);
     color: var(--blanco);
-
+    
 }
 
 /* Globales */
 .floatLeft{
-
+    
     float: left;
-
+    
 }
 
 
 .bold{
-
+    
     font-weight: bold;
-
+    
 }
 
 .overflowTwoLines{
-
+    
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-align: justify;
-
+    
 }
 
 .overflowThreeLines{
-
+    
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-align: justify;
-
+    
 }
 
 .sombreado{
-
+    
     box-shadow: 0px 3px 6px -4px rgba(0,0,0,0.75);
-
+    
 }
 
 .borde{
-
+    
     border: 1px solid var(--gris);
-
+    
 }
 
 .w-65{
-
+    
     width: 65%;
-
+    
 } 
 
+.w-40{
+    
+    width: 40%;
+    
+}
+
 .w-45{
-
+    
     width: 45%;
-
+    
 }
 
 .h-60{
-
+    
     height: 60%;
+    
+}
 
+.h-80{
+    
+    height: 80%;
+    
 }
 
 /* Clases de elementos de la página */
 .contenedorPrincipal{
-
+    
     display: flex;
     justify-content: space-between;
     background-color: var(--background);
-
+    
 }
 
 .contenedor{
-
+    
     float: left;
     margin-top: 75px;
     height: calc(100% - 75px);
     color: var(--texto);
-
+    
 }
 
 .contenido{
-
+    
     max-height: 80vh;
     padding-top: 15px;
     padding-left: 20px;
@@ -151,11 +163,11 @@ select:hover{
     float: left;
     position: relative;
     background: var(--blanco);
-
+    
 }
 
 .filtroPaises{
-
+    
     width: 200px;
     float: left;
     background-color: var(--blanco);
@@ -163,11 +175,11 @@ select:hover{
     border-radius: 7px;
     padding: 1px;
     height: 30px !important;
-
+    
 }
 
 .resultado{
-
+    
     width: 100%;
     padding: 10px;
     border: 1px solid var(--gris);
@@ -175,39 +187,72 @@ select:hover{
     margin-bottom: 10px;
     border-radius: 7px;
     cursor: pointer;
-
+    
 }
 
 .scroll{
-
+    
     max-height: 450px;
     overflow: scroll;
+    
+}
+
+.botonPequeño{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    height: 40px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: var(--background);
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 10px;
+    
+}
+
+.palabraRelacionada{
+
+    width: 210px;
+
+}
+
+.paisRelacionado{
+
+    width: 50px;
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 0px !important;
 
 }
 
 /* Estilos de las definiciones colapsables */
 .card-header{
-
+    
     background-color: var(--blanco);
     height: 40px;
     display: flex;
     align-items: center;
     padding: 0;
     text-decoration: none;
-
+    
 }
 
 .btn-card{
-
+    
     background-color: var(--blanco);
     color: var(--azul);
     width: 100%;
     text-align: left;
-
+    
 }
 
 .card-body{
-
+    
     text-align: justify;
-
+    
 }
