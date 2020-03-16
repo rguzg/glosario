@@ -19,9 +19,39 @@
     <link rel="stylesheet" href="../css/glosario.css">
     <!-- JS -->
     <script src="../js/sidebar.js"></script>
+    <script defer src="../js/modales.js"></script>
     
 </head>
 <body>
+    <div class="modal fade" id="modalRelacionarPalabra" tabindex="-1" role="dialog" aria-labelledby="relacionarPalabraModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-start">
+                    <div class="modalIcon bg-info mr-4" style="width: 30px; height: 30px;">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h5 class="modal-title" id="modalRelacionarLabel"><b>Relación de Palabras</b></h5>
+                </div>
+                <div class="modal-body py-4 px-5">
+                    <h5><b>País</b></h5>
+                    <select class="form-control" name="pais" id="pais">
+                        <option value="MX">México</option>
+                        <option value="NK">Corea del Norte</option>
+                    </select>
+                    <br>
+                    <h5><b>Palabra</b></h5>
+                    <select class="form-control" name="pais" id="pais">
+                        <option value="1">Palabra</option>
+                        <option value="2">Palabra 2</option>
+                    </select>
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" class="w-40 btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="w-40 btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="active" id="sidebar">
         <div class="pleft2rem w-100 h-100 mt-5 container d-flex flex-column justify-content-start">
             <h6 class="mb-3"><b>MENU</b></h6>
@@ -53,7 +83,7 @@
                 </div>
                 <div>
                     <button class="btn btn-outline-secondary">Lenguas Maternas</button>
-                    <button class="btn btn-outline-info mr-1"><i class="fas fa-exchange-alt mr-1"></i>Relacionar Palabra</button>
+                    <button class="btn btn-outline-info mr-1" id="relacionarPalabra"><i class="fas fa-exchange-alt mr-1"></i>Relacionar Palabra</button>
                     <button class="btn btn-outline-danger"><i class="fas fa-exclamation-triangle mr-1"></i>Reportar Palabra</button>
                 </div>
             </div>
@@ -140,10 +170,10 @@
                         </div>
                     </div>
                     <div class="col-6 h-100 d-flex flex-column justify-content-center">
-                            <div class="d-flex flex-row align-items-center justify-content-between" style="height: 40px;">
-                                <h5>Descripción</h5>
-                            </div>
-                            <textarea name="" id="" cols="30" rows="8" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias itaque mollitia vel delectus qui tempora quibusdam sapiente suscipit, fuga aperiam ipsa minus nemo ullam ab dicta et iste modi enim laudantium soluta sint impedit! Id alias vitae voluptates aperiam ipsam facilis quasi nesciunt dolore doloribus tenetur odio magni recusandae laudantium culpa aut temporibus, minus qui maxime numquam laboriosam, harum, nulla neque? Facilis necessitatibus quos expedita iure pariatur ipsam obcaecati quas, voluptates ea laboriosam autem quidem, veritatis corporis minus, incidunt unde molestiae cumque tempore iste sequi ex. Amet suscipit iusto, vel repellat vero expedita, harum quos temporibus eos est hic.</textarea>
+                        <div class="d-flex flex-row align-items-center justify-content-between" style="height: 40px;">
+                            <h5>Descripción</h5>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="8" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias itaque mollitia vel delectus qui tempora quibusdam sapiente suscipit, fuga aperiam ipsa minus nemo ullam ab dicta et iste modi enim laudantium soluta sint impedit! Id alias vitae voluptates aperiam ipsam facilis quasi nesciunt dolore doloribus tenetur odio magni recusandae laudantium culpa aut temporibus, minus qui maxime numquam laboriosam, harum, nulla neque? Facilis necessitatibus quos expedita iure pariatur ipsam obcaecati quas, voluptates ea laboriosam autem quidem, veritatis corporis minus, incidunt unde molestiae cumque tempore iste sequi ex. Amet suscipit iusto, vel repellat vero expedita, harum quos temporibus eos est hic.</textarea>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between">
@@ -155,23 +185,23 @@
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                             <div class="border palabraRelacionada botonPequeño">
-                                    🦉 Agua Lodosa 
+                                🦉 Agua Lodosa 
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                             <div class="border palabraRelacionada botonPequeño">
-                                    🦉 Agua Lorem 
+                                🦉 Agua Lorem 
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                             <div class="border palabraRelacionada botonPequeño">
-                                    🦉 Agua Lorem 
+                                🦉 Agua Lorem 
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                             <div class="border palabraRelacionada botonPequeño">
-                                    🦉 Agua Lorem 
+                                🦉 Agua Lorem 
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                             <div class="border palabraRelacionada botonPequeño">
-                                    🦉 Agua Lorem 
+                                🦉 Agua Lorem 
                                 <i class="fas fa-audio-description ml-1 fa-lg"></i>
                             </div>
                         </div>

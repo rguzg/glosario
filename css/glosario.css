@@ -60,6 +60,12 @@ select:hover{
     
 }
 
+h5{
+
+    color: var(--texto);
+
+}
+
 /* Globales */
 .floatLeft{
     
@@ -104,6 +110,12 @@ select:hover{
     
     border: 1px solid var(--gris);
     
+}
+
+.justify-content-evenly{
+
+    justify-content: space-evenly !important;
+
 }
 
 .w-65{
@@ -166,10 +178,9 @@ select:hover{
     
 }
 
-.filtroPaises{
+.filtro{
     
     width: 200px;
-    float: left;
     background-color: var(--blanco);
     color: var(--texto);
     border-radius: 7px;
@@ -227,6 +238,20 @@ select:hover{
     justify-content: center;
     margin-right: 20px;
     margin-bottom: 0px !important;
+
+}
+
+.modalIcon{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: var(--blanco);
 
 }
 
