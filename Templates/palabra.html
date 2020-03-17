@@ -52,6 +52,26 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modalReportarPalabra" tabindex="-1" role="dialog" aria-labelledby="reportarPalabraModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-start">
+                    <div class="modalIcon bg-danger mr-4" style="width: 30px; height: 30px;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h5 class="modal-title" id="modalReportarLabel"><b>Reporte</b></h5>
+                </div>
+                <div class="modal-body py-4 px-5">
+                    <h5><b>Descripción del problema</b></h5>
+                    <textarea name="descripcion" id="descripcion" cols="46" rows="10"></textarea>
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" class="w-40 btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="w-40 btn btn-primary">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="active" id="sidebar">
         <div class="pleft2rem w-100 h-100 mt-5 container d-flex flex-column justify-content-start">
             <h6 class="mb-3"><b>MENU</b></h6>
@@ -84,7 +104,7 @@
                 <div>
                     <button class="btn btn-outline-secondary">Lenguas Maternas</button>
                     <button class="btn btn-outline-info mr-1" id="relacionarPalabra"><i class="fas fa-exchange-alt mr-1"></i>Relacionar Palabra</button>
-                    <button class="btn btn-outline-danger"><i class="fas fa-exclamation-triangle mr-1"></i>Reportar Palabra</button>
+                    <button class="btn btn-outline-danger" id="reportarPalabra"><i class="fas fa-exclamation-triangle mr-1"></i>Reportar Palabra</button>
                 </div>
             </div>
             <div class="contenido borde col-4 h-100 scroll">
