@@ -7,6 +7,7 @@
     --inputModerador : #7ebdff;
     --reporte: #D89597;
     --sugerencia: #e18c29;
+    --cintilloReporte: #cc7375;
 }
 
 *{
@@ -351,6 +352,44 @@ button.sugerencia{
 .reporte > h6 {
 
     color: var(--reporte);
+
+}
+
+.resultadoModerador{
+
+    width: 300px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.resultadoModerador .reporte{
+
+    width: 20px;
+    background-color: var(--cintilloReporte);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+    margin-right: 20px;
+    float: left;
+
+}
+
+#resultados{
+
+    max-height: 490px;
+    overflow: scroll;
+
+}
+
+.moderador{
+
+    max-height: 560px;
 
 }
 
