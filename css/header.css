@@ -106,18 +106,27 @@ nav{
 .overlay {
     display: none;
     position: fixed;
-    /* full screen */
     width: 100vw;
     height: 100vh;
-    /* transparent black */
     background: rgba(0, 0, 0, 0.7);
-    /* middle layer, i.e. appears below the sidebar */
     z-index: 998;
     opacity: 0;
-    /* animate the transition */
     transition: all 0.5s ease-in-out;
 }
 /* display .overlay when it has the .active class */
+
+#permanentSidebar {
+    min-width: 250px;
+    max-width: 250px;
+    height: calc(100vh - 50px);
+    position: relative;
+    background-color: var(--blanco);
+    /* top layer */
+    z-index: 9999;
+    transition: all 0.3s;
+    margin-top: 50px;
+}
+
 .overlay.active {
     display: block;
     opacity: 1;

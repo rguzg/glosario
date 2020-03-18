@@ -4,6 +4,9 @@
     --azul: #2490FF;
     --gris: #dedede;
     --background: #F7F9FC;
+    --inputModerador : #7ebdff;
+    --reporte: #D89597;
+    --sugerencia: #e18c29;
 }
 
 *{
@@ -38,7 +41,7 @@ textarea{
 
 textarea:disabled{
     
-    background-color: var(--blanco);
+    background-color: var(--blanco) !important;
     
 }
 
@@ -60,6 +63,12 @@ select:hover{
     background-color: var(--azul);
     color: var(--blanco);
     
+}
+
+input:disabled{
+
+    background-color: var(--blanco) !important;
+
 }
 
 h5{
@@ -255,6 +264,94 @@ h5{
     border-radius: .25rem;
     color: var(--blanco);
     
+}
+
+.inputModerador{
+
+    border-color: var(--inputModerador);
+    margin-bottom: .5rem;
+
+}
+
+.botonModerador{
+
+    border-color: var(--inputModerador);
+    background-color: var(--inputModerador);
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: .5rem;
+
+}
+
+.inputModerador:hover{
+
+    background-color: inherit;
+    color: var(--texto);
+
+}
+
+.custom-file-label::after{
+
+    content: "Subir" !important;
+    color: var(--blanco);
+    background-color: var(--inputModerador);
+
+}
+
+.sugerencia, .sugerencia:disabled{
+
+    border-color: var(--sugerencia);
+    border-radius: 7px;
+    background-color: #fcf8e7 !important;
+
+}
+
+.sugerencia > div {
+
+    font-size: 20px;
+
+}
+
+button.sugerencia{
+
+    border-width: 2px;
+    color: #EAD068;
+
+}
+
+.sugerencia > textarea{
+
+    background-color: #fcf8e7 !important;
+    border: none;
+
+}
+
+.sugerencia > h6{
+
+    color: var(--sugerencia);
+
+}
+
+.reporte{
+
+    border-color: var(--reporte);
+    border-radius: 7px;
+    background-color: #FBF2F2;
+    font-size: 20px;
+
+}
+
+.reporte > textarea {
+
+    background-color: #FBF2F2 !important;
+    border: none;
+
+}
+
+.reporte > h6 {
+
+    color: var(--reporte);
+
 }
 
 /* Estilos de las definiciones colapsables */
