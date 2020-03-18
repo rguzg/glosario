@@ -359,6 +359,7 @@ button.sugerencia{
 
     width: 300px;
     height: 120px;
+    margin-right: 15px;
     margin-bottom: 10px;
     border-radius: 7px;
     display: flex;
