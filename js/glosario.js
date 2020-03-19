@@ -18,7 +18,7 @@ $(() => {
     if (tipoUsuario == 'moderador') {
     
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Agregar palabras', htmlTarget = 'agregarPalabra.html'));
-        contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Palabras por aprobar', htmlTarget = '#'));
+        contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Palabras por aprobar', htmlTarget = 'porAprobar.html'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Palabras reportadas', htmlTarget = 'reportadas.html'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Fotos por aprobar', htmlTarget = '#'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Fotos reportadas', htmlTarget = '#'));

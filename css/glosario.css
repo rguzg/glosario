@@ -381,6 +381,19 @@ button.sugerencia{
 
 }
 
+.resultadoModerador .aprobar{
+
+    width: 20px;
+    background-color: var(--sugerencia);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+    margin-right: 20px;
+    float: left;
+
+}
+
 #resultados{
 
     max-height: 490px;

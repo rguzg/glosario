@@ -78,5 +78,7 @@ function mostrarPanelLateral(){
     let panelLateral = document.querySelector('.panelLateral');
     panelLateral.classList.add('activo');
 
+    //Eventualmente aquí iran los AXIOS para traer los datos que van a ir en el panel lateral
+
 
 }

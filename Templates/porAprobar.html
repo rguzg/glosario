@@ -20,10 +20,10 @@
     <!-- JS -->
     <script src="../js/sidebar.js"></script>
     <script src="../js/glosario.js"></script>
-    <script src="../js/reporte.js"></script>
+    <script src="../js/aprobar.js"></script>
     
 </head>
-<body data-opcionMenu="Palabras reportadas">
+<body data-opcionMenu="Palabras por aprobar">
     <nav id="permanentSidebar">
         <div class="pleft2rem w-100 h-100 pt-3 container d-flex flex-column justify-content-start" id="sidebarButtons">
             <h6 class="mb-3"><b>MENU</b></h6>
@@ -48,22 +48,7 @@
                     <h5>Glosario</h5>
                 </div>
                 <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
-                    <div class="resultadoModerador borde">
-                        <div class="reporte h-100"></div>
-                        <div class="w-75">
-                            <h5>Aguas Residuales</h5>
-                            <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
-                        </div>
-                        <div class="h-100 pt-2 ml-2">🦉</div>
-                    </div>
-                    <div class="resultadoModerador borde">
-                        <div class="reporte h-100"></div>
-                        <div class="w-75">
-                            <h5>Aguas Residuales</h5>
-                            <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
-                        </div>
-                        <div class="h-100 pt-2 ml-2">🦉</div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -73,16 +58,17 @@
                     <h5>Palabra</h5>
                 </div>
                 <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
-                    <div class="reporte borde p-2">
-                        <h6>Reporte</h6>
-                        <textarea class="form-control" name="reporte" id="reporte" cols="30" rows="8" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fuga in libero et! Ex porro alias vitae esse voluptas eum?</textarea>
+                   <div class="sugerencia borde p-2">
+                        <h6>Definición por el usuario</h6>
+                        <textarea class="form-control" name="sugerencia" id="sugerencia" cols="30" rows="7" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fuga in nishinoya libero et! Ex porro alias vitae esse voluptas eum?</textarea>
                     </div>
-                    <label for="fecha">Fecha del reporte</label>
+                    <label for="fecha">Fecha de sugerencia</label>
                     <input class="form-control inputModerador" type="date" name="fecha" id="fecha" disabled>
-                    <label for="usuarioReporte">Reportado por</label>
-                    <input class="form-control inputModerador" type="text" name="usuarioReporte" id="usuarioReporte" disabled>
-                    <button class="btn btn-outline-danger w-100 mb-3">Descartar reporte</button>
-                    <button class="btn botonModerador w-100">Guardar Cambios</button>
+                    <label for="usuarioSugerencia">Agregado por</label>
+                    <input class="form-control inputModerador" type="text" name="usuarioSugerencia" id="usuarioSugerencia" disabled>
+                    <label for="estado">Estado</label>
+                    <input class="form-control inputModerador" type="text" name="estado" id="estado" disabled>
+                    <button class="btn botonModerador w-100">Revisar</button>
                 </div>
             </div>
         </div>
