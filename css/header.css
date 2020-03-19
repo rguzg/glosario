@@ -154,3 +154,9 @@ nav{
 #sidebar.active {
     margin-left: -250px;
 }
+
+#cerrarSesion{
+
+    cursor: pointer;
+
+}
