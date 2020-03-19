@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFI-LAC</title>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <script src="../Bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../Bootstrap/js/popper.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <!-- Fuente: Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/glosario.css">
+    <!-- JS -->
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/glosario.js"></script>
+    <script src="../js/fotosAprobar.js"></script>
+    
+</head>
+<body data-opcionMenu="Fotos por aprobar">
+    <nav id="permanentSidebar">
+        <div class="pleft2rem w-100 h-100 pt-3 container d-flex flex-column justify-content-start" id="sidebarButtons">
+            <h6 class="mb-3"><b>MENU</b></h6>
+        </div>
+    </nav>
+    <nav class="navbar fixed-top">
+        <div class="ml-3 navbar-brand">
+            <span><a href="glosario.html">IFI-LAC</a></span>
+        </div>
+        <div>
+            <input type="text" id="search" class="form-control barraBusqueda" placeholder="Buscar">
+        </div>
+        <div class="mr-3" id="cerrarSesion">
+            <span>Cerrar Sesión</span>
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+    </nav>
+    <div class="contenedorPrincipal container-fluid">
+        <div class="contenedor col-12 px-4 justify-content-between">
+            <div class="contenido moderador h-100 p-3 d-flex flex-wrap col-12 sombreado borde align-content-start" id="contenedorResultados" data-panellateral = "false">
+                <div class="col-12 mb-3">
+                    <h5>Fotos por aprobar</h5>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
+                    
+                </div>
+            </div>
+        </div>
+        <!-- <div class="contenedor panelLateral col-4 px-4 justify-content-between">
+            <div class="contenido moderador h-100 p-3 d-flex flex-wrap col-12 sombreado borde align-content-start">
+                <div class="col-12 mb-3" id="palabra">
+                    <h5>Palabra</h5>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
+                   <div class="sugerencia borde p-2">
+                        <h6>Definición por el usuario</h6>
+                        <textarea class="form-control" name="sugerencia" id="sugerencia" cols="30" rows="7" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fuga in nishinoya libero et! Ex porro alias vitae esse voluptas eum?</textarea>
+                    </div>
+                    <label for="fecha">Fecha de sugerencia</label>
+                    <input class="form-control inputModerador" type="date" name="fecha" id="fecha" disabled>
+                    <label for="usuarioSugerencia">Agregado por</label>
+                    <input class="form-control inputModerador" type="text" name="usuarioSugerencia" id="usuarioSugerencia" disabled>
+                    <label for="estado">Estado</label>
+                    <input class="form-control inputModerador" type="text" name="estado" id="estado" disabled>
+                    <button class="btn botonModerador w-100">Revisar</button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</div>
+<div class="overlay"></div>
+</body>
+</html>

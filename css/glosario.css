@@ -401,6 +401,12 @@ button.sugerencia{
 
 }
 
+#fotoPalabra{
+    height: 50px;
+    width: 100px;
+
+}
+
 .moderador{
 
     max-height: 560px;
