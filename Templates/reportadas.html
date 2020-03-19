@@ -43,29 +43,48 @@
     </nav>
     <div class="contenedorPrincipal container-fluid">
         <div class="contenedor col-12 px-4 justify-content-between">
-                <div class="contenido moderador h-100 p-3 d-flex flex-wrap col-12 sombreado borde align-content-start" >
-                    <div class="col-12 mb-3">
-                        <h5>Glosario</h5>
+            <div class="contenido moderador h-100 p-3 d-flex flex-wrap col-12 sombreado borde align-content-start" id="contenedorResultados" data-panellateral = "false">
+                <div class="col-12 mb-3">
+                    <h5>Glosario</h5>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
+                    <div class="resultadoModerador borde">
+                        <div class="reporte h-100"></div>
+                        <div class="w-75">
+                            <h5>Aguas Residuales</h5>
+                            <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
+                        </div>
+                        <div class="h-100 pt-2 ml-2">🦉</div>
                     </div>
-                    <div class="col-12 d-flex flex-wrap align-content-start justify-content-left scroll" id="resultados">
-                        <div class="resultadoModerador borde">
-                            <div class="reporte h-100"></div>
-                            <div class="w-75">
-                                <h5>Aguas Residuales</h5>
-                                <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
-                            </div>
-                            <div class="h-100 pt-2 ml-2">🦉</div>
+                    <div class="resultadoModerador borde">
+                        <div class="reporte h-100"></div>
+                        <div class="w-75">
+                            <h5>Aguas Residuales</h5>
+                            <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
                         </div>
-                        <div class="resultadoModerador borde">
-                            <div class="reporte h-100"></div>
-                            <div class="w-75">
-                                <h5>Aguas Residuales</h5>
-                                <span class="overflowThreeLines">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, tenetur molestiae quibusdam libero alias corporis iusto dolores sed, soluta magnam dignissimos ex inventore, veritatis aliquid perferendis repudiandae doloremque laborum omnis.</span>
-                            </div>
-                            <div class="h-100 pt-2 ml-2">🦉</div>
-                        </div>
+                        <div class="h-100 pt-2 ml-2">🦉</div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="contenedor panelLateral col-4 px-4 justify-content-between">
+            <div class="contenido moderador h-100 p-3 d-flex flex-wrap col-12 sombreado borde align-content-start">
+                <div class="col-12 mb-3" id="palabra">
+                    <h5>Palabra</h5>
+                </div>
+                <div class="col-12 d-flex flex-wrap align-content-start justify-content-between scroll" id="resultados">
+                    <div class="reporte borde p-2">
+                        <h6>Reporte</h6>
+                        <textarea class="form-control" name="reporte" id="reporte" cols="30" rows="8" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis fuga in libero et! Ex porro alias vitae esse voluptas eum?</textarea>
+                    </div>
+                    <label for="fecha">Fecha del reporte</label>
+                    <input class="form-control inputModerador" type="date" name="fecha" id="fecha" disabled>
+                    <label for="usuarioReporte">Reportado por</label>
+                    <input class="form-control inputModerador" type="text" name="usuarioReporte" id="usuarioReporte" disabled>
+                    <button class="btn btn-outline-danger w-100 mb-3">Descartar reporte</button>
+                    <button class="btn botonModerador w-100">Guardar Cambios</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>

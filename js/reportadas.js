@@ -48,7 +48,35 @@ function nuevoResultadoModerador(id, tipoResultado, palabra, descripcion, pais){
 
     resultadoModerador.appendChild(contenedorImagen);
 
+    //Añadir evento para hacer que aparezca el panel lateral
+    resultadoModerador.addEventListener('click', () =>{
+
+        mostrarPanelLateral();
+
+    });
+
     contenedorResultados.appendChild(resultadoModerador);
     
+}
+
+function mostrarPanelLateral(){
+
+    let cambiarAnchura = () => {
+
+        let resultados = document.querySelector('#contenedorResultados');
+        if(resultados.dataset.panellateral == "false"){
+
+            resultados.classList.replace('col-12','col-8');
+            resultados.dataset.panelLateral = "true";
+
+        }
+
+    };
+
+    cambiarAnchura();
+
+    let panelLateral = document.querySelector('.panelLateral');
+    panelLateral.classList.add('activo');
+
 
 }
