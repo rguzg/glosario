@@ -292,6 +292,16 @@ h5{
 
 }
 
+.botonVerde{
+
+    border-color: #98B151;
+    background-color: #98B151;
+    text-align: center;
+    color: var(--blanco);
+    margin-bottom: .5rem;
+
+}
+
 .inputModerador:hover{
 
     background-color: inherit;

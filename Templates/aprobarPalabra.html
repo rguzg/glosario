@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFI-LAC</title>
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <script src="../Bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../Bootstrap/js/popper.min.js"></script>
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <!-- Fuente: Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/glosario.css">
+    <!-- JS -->
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/glosario.js"></script>
+    
+</head>
+<body data-opcionMenu="Aprobar palabra">
+    <nav id="permanentSidebar">
+        <div class="pleft2rem w-100 h-100 pt-3 container d-flex flex-column justify-content-start" id="sidebarButtons">
+            <h6 class="mb-3"><b>MENU</b></h6>
+        </div>
+    </nav>
+    <nav class="navbar fixed-top">
+        <div class="ml-3 navbar-brand">
+            <span><a href="glosario.html">IFI-LAC</a></span>
+        </div>
+        <div>
+            <input type="text" id="search" class="form-control barraBusqueda" placeholder="Buscar">
+        </div>
+        <div class="mr-3" id="cerrarSesion">
+            <span>Cerrar Sesión</span>
+            <i class="fas fa-sign-out-alt"></i>
+        </div>
+    </nav>
+    <div class="contenedorPrincipal container-fluid">
+        <div class="contenedor bg-white sombreado col-12 p-4 d-flex flex-wrap justify-content-between">
+            <div class="col-12 d-flex justify-content-between align-items-center">
+                <h5><b>Aprobar palabra</b></h5>
+            </div>
+            <form class="w-100">
+                <div class="contenido px-3 pt-0 col-4 h-100 align-items-center">
+                    <label for="palabra">Palabra</label>
+                    <input class="form-control inputModerador" type="text" name="palabra" id="palabra" required>
+                    <label for="palabra">País de origen</label>
+                    <select name="paisOrigen" id="paisOrigen" class="form-control inputModerador" required>
+                        <option value="MX">México</option>
+                        <option value="NK">Corea del Norte</option>
+                    </select>
+                    <label for="descripcion">Descripción del usuario</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="7 " class="form-control inputModerador ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum quod! Magnam placeat incidunt, nulla hic quaerat iure, aperiam praesentium saepe animi esse obcaecati voluptates harum commodi sequi nisi at?</textarea>
+                    <label for="relacionados">Países relacionados por el usuario</label>
+                    <div style="overflow: scroll; height: 150px;">
+                        <ol class="list-group">
+                            <li class="list-group-item">México</li>
+                            <li class="list-group-item">Corea del Norte</li>
+                            <li class="list-group-item">Corea del Norte</li>
+                            <li class="list-group-item">Corea del Norte</li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                <div class="contenido px-3 pt-0 col-4 h-100">
+                    <label for="definicion-unesco">Escriba la definición de UNESCO-OMM</label>
+                    <textarea name="definicion-unesco" id="definicion-unesco" cols="30" rows="9" class="form-control inputModerador "></textarea>
+                    <label for="definicion-regional">Escriba la definición regional de IFI-LAC</label>
+                    <textarea name="definicion-regional" id="definicion-regional" cols="30" rows="9" class="form-control inputModerador "></textarea>
+                </div>
+                <div class="contenido px-3 pt-0 col-4 h-100">
+                    <label for="definicion-consensuada">Escriba la definición consensuada</label>
+                    <textarea name="definicion-consensuada" id="definicion-consensuada" cols="30" rows="9" class="form-control inputModerador mb-3"></textarea>
+                    <button class="btn botonVerde w-100">Guardar Cambios</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="overlay"></div>
+</body>
+</html>
