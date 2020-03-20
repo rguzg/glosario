@@ -365,9 +365,11 @@ button.sugerencia{
 
 .resultadoModerador{
 
+    background-color: var(--blanco);
     width: 300px;
     height: 120px;
     margin-bottom: 10px;
+    margin-right: 5px;
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -392,6 +394,19 @@ button.sugerencia{
 
     width: 20px;
     background-color: var(--sugerencia);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+    margin-right: 20px;
+    float: left;
+
+}
+
+.resultadoModerador .aprobada{
+
+    width: 20px;
+    background-color: var(--azul);
     border-top-left-radius: 7px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 7px;
@@ -437,6 +452,50 @@ button.sugerencia{
 
     margin-left: -200%;
     transition: all 1s ease-in-out;
+
+}
+
+.leyenda{
+
+    height: 25px;
+    width: 25px;
+
+}
+
+.leyenda.reporte{
+
+    background-color: var(--cintilloReporte);
+    border-radius: 7px;
+
+}
+
+.leyenda.aprobar{
+
+    background-color: var(--sugerencia);
+    border-radius: 7px;
+
+
+}
+.leyenda.aprobada{
+
+    background-color: var(--azul);
+    border-radius: 7px;
+
+}
+
+.contenedorLeyendas{
+
+    /* bg-white py-2 pl-2 h-25 mt-2 d-flex sombreado flex-wrap align-content-between */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    background-color: var(--blanco);
+    padding-left: .5rem;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    height: 150px;
+    margin-top: .5rem;
+    border-radius: 7px;
 
 }
 

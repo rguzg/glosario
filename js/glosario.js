@@ -17,6 +17,7 @@ $(() => {
 
     if (tipoUsuario == 'moderador') {
     
+        contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Inicio Moderador', htmlTarget = 'inicio moderador.html', icono = 'fa-home'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Agregar palabras', htmlTarget = 'agregarPalabra.html'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Palabras por aprobar', htmlTarget = 'porAprobar.html'));
         contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Palabras reportadas', htmlTarget = 'reportadas.html'));
@@ -83,7 +84,7 @@ function nuevoResultadoModerador(id, tipoResultado, palabra, descripcion, pais){
 
     //Creación de la barra lateral
     let barraLateral = document.createElement('div');
-    barraLateral.classList.add(...['h-100', tipoResultado == 'reporte' ? 'reporte': 'aprobar']);
+    barraLateral.classList.add(...['h-100', tipoResultado]);
     resultadoModerador.appendChild(barraLateral);
 
     //Creación del contenedor de la definición
