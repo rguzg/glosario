@@ -282,6 +282,12 @@ h5{
 
 }
 
+.inputModerador:invalid{
+
+    border-color: var(--reporte);
+
+}
+
 .botonModerador{
 
     border-color: var(--inputModerador);
