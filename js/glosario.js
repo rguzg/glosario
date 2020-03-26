@@ -14,6 +14,7 @@ $(() => {
     let contenedorBotones = document.querySelector('#sidebarButtons');
 
     contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Inicio', htmlTarget = 'glosario.html', icono = 'fa-home'));
+    contenedorBotones.appendChild(nuevoBotonSidebar(texto = 'Sugerir palabra', htmlTarget = 'sugerirPalabra.html'));
 
     if (tipoUsuario == 'moderador') {
     
