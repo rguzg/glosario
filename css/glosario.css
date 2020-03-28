@@ -8,6 +8,7 @@
     --reporte: #D89597;
     --sugerencia: #e18c29;
     --cintilloReporte: #cc7375;
+    --fondo-ifilac: rgba(10,255,92,0.2);
 }
 
 *{
@@ -512,6 +513,67 @@ button.sugerencia{
     height: 150px;
     margin-top: .5rem;
     border-radius: 7px;
+
+}
+
+.login{
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+
+}
+
+.contenedorLogin{
+
+    height: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--blanco);
+    justify-content: center;
+    align-content: space-evenly;
+
+}
+
+.contenedorLogin>div>label{
+
+    color: var(--texto);
+
+}
+
+.backgroundLogin{
+
+    background-image: url(../img/fondo_gradient_full.png);
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    z-index: 0;
+
+}  
+
+.backgroundLogin>h1{
+    
+    text-align: center;
+    font-size: 60px;
+    color: var(--blanco);
+
+}
+
+.footer{
+
+    height: 7%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+
+}
+
+.logos{
+
+    height: 100%;
 
 }
 
