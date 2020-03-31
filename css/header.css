@@ -122,7 +122,7 @@ nav{
     position: relative;
     background-color: var(--blanco);
     /* top layer */
-    z-index: 9999;
+    z-index: 90;
     transition: all 0.3s;
     margin-top: 50px;
 }

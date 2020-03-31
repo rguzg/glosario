@@ -5,6 +5,7 @@
     --gris: #dedede;
     --background: #F7F9FC;
     --inputModerador : #7ebdff;
+    --perfil : #f6f6f6;
     --reporte: #D89597;
     --sugerencia: #e18c29;
     --cintilloReporte: #cc7375;
@@ -73,7 +74,7 @@ input:disabled{
 
 }
 
-h5{
+h5,h6{
     
     color: var(--texto);
     
@@ -446,7 +447,7 @@ button.sugerencia{
 
 }
 
-.moderador{
+.moderador,.perfil{
 
     max-height: 560px;
 
@@ -574,6 +575,37 @@ button.sugerencia{
 .logos{
 
     height: 100%;
+
+}
+
+.imagenPerfil{
+
+    border-radius: 50%;
+    background-image: url(../img/profilepicture.jpg);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+
+}
+
+.numeroSugerencias{
+
+    font-size: 30px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--perfil);
+    margin-bottom: 30px;
+
+}
+
+.datoPerfil:disabled{
+
+    border-color: var(--perfil);
+    margin-bottom: 1rem;
+    background-color: var(--perfil) !important;
 
 }
 
