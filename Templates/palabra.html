@@ -73,6 +73,33 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modalSugerirImagen" tabindex="-1" role="dialog" aria-labelledby="sugerirImagenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-start">
+                    <div class="modalIcon bg-primary mr-4" style="width: 30px; height: 30px;">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h5 class="modal-title" id="modalSugerirLabel"><b>Sugerir imagen</b></h5>
+                </div>
+                <div class="modal-body py-4 px-5">
+                    <label for="imagen">Imagen</label>
+                    <div class="custom-file mb-2">
+                        <input type="file" class="custom-file-input" id="imagen" name="imagen" accept="image/*" required>
+                        <label class="custom-file-label inputModerador" for="imagen">Selecciona un archivo</label>
+                    </div>
+                    <label for="descripcion">Agrega una descripción a la imagen</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="3" class="form-control inputModerador mb-1"></textarea>
+                    <label for="autor">Autor de la imagen</label>
+                    <input class="form-control inputModerador" type="text" name="autor" id="autor">
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" class="w-40 btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="w-40 btn btn-primary">Enviar Sugerencia</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="active" id="sidebar">
         <div class="pleft2rem w-100 h-100 mt-5 container d-flex flex-column justify-content-start" id="sidebarButtons">
             <h6 class="mb-3"><b>MENU</b></h6>
@@ -161,7 +188,10 @@
                     <div class="col-6 h-100 d-flex flex-column justify-content-center">
                         <div class="d-flex flex-row align-items-center justify-content-between" style="height: 40px;">
                             <h5>Galería</h5>
-                            <button class="btn btn-outline-danger"><i class="fas fa-flag"></i></button>
+                            <div>
+                                <button class="btn btn-outline-danger"><i class="fas fa-flag"></i></button>
+                                <button class="btn btn-outline-primary" id="sugerirImagen">Sugerir imagen</button>
+                            </div>
                         </div>
                         <div id="carouselGaleria" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner" id="fotosCarousel">
