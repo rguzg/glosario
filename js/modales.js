@@ -10,6 +10,12 @@ $('#reportarPalabra').click(function (e) {
 
 });
 
+$('#reportarImagen').click(function (e) { 
+    
+    $('#modalReportarImagen').modal('show');
+
+});
+
 $('#sugerirImagen').click(function (e) { 
     
     $('#modalSugerirImagen').modal('show');

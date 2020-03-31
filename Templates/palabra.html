@@ -60,7 +60,7 @@
                     <div class="modalIcon bg-danger mr-4" style="width: 30px; height: 30px;">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
-                    <h5 class="modal-title" id="modalReportarLabel"><b>Reporte</b></h5>
+                    <h5 class="modal-title" id="modalReportarLabel"><b>Reportar Palabra</b></h5>
                 </div>
                 <div class="modal-body py-4 px-5">
                     <h5><b>Descripción del problema</b></h5>
@@ -96,6 +96,26 @@
                 <div class="modal-footer d-flex justify-content-evenly">
                     <button type="button" class="w-40 btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
                     <button type="button" class="w-40 btn btn-primary">Enviar Sugerencia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalReportarImagen" tabindex="-1" role="dialog" aria-labelledby="reportarImagenModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center justify-content-start">
+                    <div class="modalIcon bg-danger mr-4" style="width: 30px; height: 30px;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h5 class="modal-title" id="modalReportarLabel"><b>Reportar Imagen</b></h5>
+                </div>
+                <div class="modal-body py-4 px-5">
+                    <h5><b>Descripción del problema</b></h5>
+                    <textarea name="descripcion" id="descripcion" cols="46" rows="10"></textarea>
+                </div>
+                <div class="modal-footer d-flex justify-content-evenly">
+                    <button type="button" class="w-40 btn btn-outline-danger" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="w-40 btn btn-primary">Aceptar</button>
                 </div>
             </div>
         </div>
@@ -189,7 +209,7 @@
                         <div class="d-flex flex-row align-items-center justify-content-between" style="height: 40px;">
                             <h5>Galería</h5>
                             <div>
-                                <button class="btn btn-outline-danger"><i class="fas fa-flag"></i></button>
+                                <button class="btn btn-outline-danger" id="reportarImagen"><i class="fas fa-flag"></i></button>
                                 <button class="btn btn-outline-primary" id="sugerirImagen">Sugerir imagen</button>
                             </div>
                         </div>
